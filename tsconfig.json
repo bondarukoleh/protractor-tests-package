@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "es2015",
+    "sourceMap": true,
+    "mapRoot": "built",
+    "outDir": "built",
+    "lib": [
+      "dom",
+      "es7"
+    ],
+    "pretty": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

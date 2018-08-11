@@ -1,0 +1,32 @@
+{
+  "name": "protractor-typescript",
+  "version": "1.0.0",
+  "description": "Some tests on protractor",
+  "main": "README.md",
+  "scripts": {
+    "pretest": "rm -rf ./output/",
+    "test": "protractor ./config/conf.js",
+    "report": "allure generate ./allure-results -o output/allure-report && allure open output/allure-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bondarukoleh/Protractor-TypeScript.git"
+  },
+  "author": "Oleg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bondarukoleh/Protractor-TypeScript/issues"
+  },
+  "homepage": "https://github.com/bondarukoleh/Protractor-TypeScript#readme",
+  "devDependencies": {
+    "@types/jasmine": "^2.8.8",
+    "@types/node": "8.0.24",
+    "allure-commandline": "2.3.3",
+    "allure-js-commons": "^1.3.0",
+    "jasmine-allure-reporter": "1.0.1",
+    "jasmine-spec-reporter": "4.2.0",
+    "protractor": "^5.4.0",
+    "ts-node": "^7.0.0",
+    "typescript": "2.5.1"
+  }
+}
