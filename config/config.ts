@@ -6,9 +6,6 @@ declare const allure: any;
 
 exports.config = {
   framework: 'jasmine2',
-  seleniumAddress: 'http://localhost:4444/wd/hub',
-  specs: ['../specs/check_table.spec.ts'],
-  baseUrl: 'http://localhost:5555/',
   onPrepare: async() => {
     await browser.waitForAngularEnabled(false)
     await browser.manage().window().maximize()
