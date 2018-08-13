@@ -2,10 +2,10 @@
 .vscode/
 .gitignore
 .npmignore
-config
-helpers
-pages
-specs
+./config
+./helpers
+./pages
+./specs
 tsconfig.json
 allure-results
 package-lock.json
