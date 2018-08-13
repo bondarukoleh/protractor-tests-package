@@ -4,9 +4,11 @@
   "description": "Some tests on protractor",
   "main": "README.md",
   "scripts": {
-    "pretest": "rm -rf ./output/",
-    "test": "protractor ./config/conf.js",
-    "report": "allure generate ./allure-results -o output/allure-report && allure open output/allure-report"
+    "start:driver": "webdriver-manager update --gecko=false && webdriver-manager start",
+    "pretest": "tsc && rm -rf ./output/",
+    "test": "protractor ./built/config/config.js",
+    "report": "allure generate ./allure-results -o output/allure-report && allure open output/allure-report",
+    "tsc": "tsc"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,7 @@
     "url": "https://github.com/bondarukoleh/Protractor-TypeScript/issues"
   },
   "homepage": "https://github.com/bondarukoleh/Protractor-TypeScript#readme",
-  "devDependencies": {
+  "dependencies": {
     "@types/jasmine": "^2.8.8",
     "@types/node": "8.0.24",
     "allure-commandline": "2.3.3",
