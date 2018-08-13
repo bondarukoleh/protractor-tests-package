@@ -2,7 +2,7 @@
   "name": "protractor-typescript",
   "bin": {
     "protractor-typescript": "./bin/run"
-  }
+  },
   "version": "1.0.0",
   "description": "Some tests on protractor",
   "main": "./built/main.js",
