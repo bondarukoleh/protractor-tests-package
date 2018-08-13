@@ -9,5 +9,5 @@ const seleniumAddress = (ENV_ARGS.protractor_hub) ? ENV_ARGS.protractor_hub : 'l
 init(null, {
   baseUrl: `http://${host}:${port}`,
   seleniumAddress: `http://${seleniumAddress}/wd/hub` || `http://localhost:4444/wd/hub`,
-  specs: [path.resolve(__dirname, './built/specs/*.spec.js')]
+  specs: [path.resolve(__dirname, './specs/*.spec.js')]
 })

@@ -10,6 +10,6 @@ const seleniumAddress = (ENV_ARGS.protractor_hub) ? ENV_ARGS.protractor_hub : 'l
 launcher_1.init(null, {
     baseUrl: `http://${host}:${port}`,
     seleniumAddress: `http://${seleniumAddress}/wd/hub` || `http://localhost:4444/wd/hub`,
-    specs: [`${path.resolve(process.cwd())}/built/specs/*.spec.js`]
+    specs: [path.resolve(__dirname, './specs/*.spec.js')]
 });
 //# sourceMappingURL=D:/Learn/Protractor-TypeScript/built/main.js.map
