@@ -7,7 +7,7 @@
   "description": "Some tests on protractor",
   "main": "./built/main.js",
   "scripts": {
-    "postinstall": "webdriver-manager update --gecko=false && webdriver-manager start",
+    "postinstall": "webdriver-manager update",
     "pretest": "tsc && rm -rf ./output/",
     "test": "node ./built/main.js",
     "report": "allure generate ./allure-results -o output/allure-report && allure open output/allure-report",
